@@ -1,0 +1,172 @@
+body{
+    overflow-x: hidden;
+   
+    
+}
+
+
+.navbar-brand{
+    margin-left: 5% !important;
+}
+
+
+
+
+.nav-link{
+    color: white !important;
+    
+}
+
+.nav-items{
+    width: 20%;
+    font-weight: bolder;
+}
+
+
+
+.form-group{
+    width: 500px;
+    height: 6vh;
+    margin-bottom: 2%;
+    
+}
+
+.form-control{
+    height: 7vh;
+   
+}
+
+h6{
+    color: #878787;
+}
+
+
+
+.mid-section >.row >.col{
+    height:fit-content !important;
+    width: fit-content !important;
+    margin-top: 20px;
+    padding-left: 0 !important;
+}
+
+
+
+/*second carousel */
+
+.second-carosel-col{
+    min-height:75vh;
+}
+
+/* .third-sec-img-container{
+    width: 100vh;
+} */
+
+
+.third-sec-img-container > .row > .col{
+  width: 23% !important;
+}
+
+.Login-button{
+    
+    margin-right: 4%;
+    width: 10vw;
+    height: 5vh;
+    color:#0d6efd;
+    font-size: bolder !important;
+    margin-left: 4%;
+    border: none;
+}
+.inner-modal-col{
+    padding:40px 33px;
+}
+
+.inner-modal-col > .image{
+    width: 100% !important;
+    height: 45% !important;
+    padding-top: 50% !important;
+    margin-top: 40%;
+    
+    background-image: url('https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.inner-col-modal-2 input{
+    max-width: 1000px;
+}
+
+
+.footer-para{
+    font-size: smaller;
+}
+
+.footer-span{
+    font-size: larger;
+}
+
+.footer-article-container{
+    margin-top: 100px;
+}
+
+.otp-button{
+    width: 90%;
+    background-color: orangered !important;
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+    margin-left: 10px;
+    margin-bottom: 200px;
+}
+
+.form-text > p{
+    font-size: small !important;
+}
+
+.create-account{
+    text-decoration: none !important;
+    margin-top: 50px !important;
+    font-size: small;
+
+}
+
+.modal{
+    border-radius: 5px;
+}
+
+.product-name{
+    font-size: large;
+}
+.product-price{
+    font-size: x-large;
+    color: green;
+}
+
+.product-company{
+    font-size: small;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .Login-button{
+        margin-left: 0;
+        background-color: transparent !important;
+        color: white;
+        border: 1px solid white;
+        margin:2%;
+    }
+    .Login-button:hover{
+        background-color: white !important;
+    }
+
+    .nav-item{
+        border-bottom: 0.4px solid white;
+    }
+    .nav-items{
+        width: 100%;
+    }
+
+    .form-group{
+        margin-top: 2%;
+    }
+}

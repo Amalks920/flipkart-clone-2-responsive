@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"> 
+
+    <link rel="stylesheet" href="styles.css">  
+   
+
+</head>
+<body class="bg-body-secondary" id="body">
+    <!--Header-section-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="flipkart logo" width="100vw">
+              </a>
+
+              
+          
+
+
+              <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                       
+                       <input type="text" class="form-control input-lg input-search me-3" id="searchZipcode" placeholder="Search">
+                    </div>
+                 </form>
+
+                 <button type="button"   class="btn bg-white Login-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+
+
+                 
+
+                <div class="nav-items float-left d-flex justify-content-between navbar-nav me-auto mb-2 mb-lg-0">
+                  
+                  <div class="nav-item">
+                    <a class="nav-link  href="#">Become a Seller</a>
+                  </div>
+                  <div class="nav-item">
+                    <a class="nav-link  href="#">More</a>
+                  </div>
+                  <div class="nav-item">
+                    <a href="#" class="nav-link">Cart</a>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </nav>
+
+
+
+          <div class="container-fluid " id="login-modal">
+            <div class="row">
+              
+
+                 <!-- <div class=" col-left border border-2 border-black">
+                <div class="container d-flex  justify-content-center border border-2 border-black">
+                  <div class="row d-flex justify-content-center mt-5  text-white border border-2 border-black">
+                    <div class="col-md-12 col-sm-3  col-l bg-primary d-flex flex-column justify-content-center align-items-left p-4 border border-2 border-black">
+                      <div>
+                        <h4>Login</h4>
+                      </div>
+                      <div>
+                        <p>Get access to your Orders, Wishlist and Recommendations</p>
+
+                      </div>
+                      <div class="mt-5 img-flex">
+                        <img class="img-fluid mt-5" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="image">
+
+                      </div>
+                        
+                    </div>
+                    <div class="col-r  bg-white border border-2 border-black">
+                      <div class="mb-3">  
+                        <label for="formGroupExampleInput" class="form-label">Example label</label>
+                        <input class="otp-input" type="text" class="form-control" id="formGroupExampleInput" placeholder="                 Example input placeholder">
+                      </div>
+                      <div class="agree text-center">
+                        <p class="text-black">By continuing, you agree to Flipkart's <a class="text-primary terms-and-privacy">Terms of Use</a> and <a class="text-primary terms-and-privacy">Privacy Policy.</a></p>
+                      </div>
+                      <div>
+                        <button class="otp-button btn-sm">Request OTP</button>
+                      </div>
+
+                      <div class="create-account">
+                        <a class="text-primary">New to Flipkart?</a>
+                        <a href="">Create an account</a>
+                            </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="col-8  col-right">hi</div> 
+            </div> -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1">
+              <div class="modal-dialog">
+                <!-- <div class="modal-content"> -->
+                  <!-- <div class="modal-header"> -->
+                    
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                  <!-- </div> -->
+                 
+                   
+                    <div class="modal-body" tabindex="-1">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-6 inner-modal-col border border-3 bg-primary text-white p-5">
+                            <div class="heading">
+                              <h2>Login</h2>
+                            </div>
+                            <div class="paragraph">
+                              Get access to your Orders, Wishlist and Recommendations
+                            </div>
+                            <div class="image">
+                              
+                            </div>
+                          </div>
+
+                          <div class="col inner-modal-col-2 bg-white pt-5">
+
+                            
+<input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+<div id="passwordHelpBlock" class="form-text">
+  <p class="fw-lighter mt-3">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
+  <button class="bg-danger-subtle otp-button">otp</button>
+
+ <a class="create-account pb-3" href="">New to Flipkart? Create an account</a>
+ <br>
+ <br>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  
+                  
+               <!--modal content-->
+                <!-- </div> -->
+             
+                <!--modal dialog-->
+              </div>
+            </div>
+
+
+              </div>
+              </div>
+             
+        
+
+
+          <!--category-section-->
+
+          <div class="category-section container-fluid text-center bg-white p-3">
+            <div class="row ">
+              <div class="col">
+                <img class="image-fluid" width="50%" src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="Groceries">
+                <p style="font-size:1.3vw">Groceries</p>
+              </div>
+              <div class="col">
+                <img class="image-fluid" width="50%" src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt="Mobiles">
+                <p style="font-size:1.3vw">Mobiles</p>
+              </div>
+              <div class="col">
+                <img class="image-fluid" width="50%" src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" alt="Fashion">
+                <p style="font-size:1.3vw">Fashion</p>
+              </div>
+
+              <div class="col">
+                <img class="image-fluid" width="50%" src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="Electronics">
+                <p style="font-size:1.3vw">Electronics</p>
+              </div>
+              <div class="col">
+                <img class="image-fluid" width="50%" src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="Home">
+                <p style="font-size:1.3vw">Home</p>
+              </div>
+
+              <div class="col">
+                <img class="image-fluid" width="50%" src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="Appliances">
+                <p style="font-size:1.3vw">Appliances</p>
+              </div>
+              <div class="col">
+                <img class="image-fluid" width="50%" src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt="Travel">
+                <p style="font-size:1.3vw">Travel</p>
+              </div>
+              <div class="col">
+                <img class="image-fluid" width="50%" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="Top Offers">
+                <p style="font-size:1.3vw">Top Offers</p>
+              </div>
+            </div>
+          </div>
+    </header>
+
+
+    <div class="container-fluid mid-section border border-2 bg-body-secondary">
+        <div class="row ">
+            <div class="col">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/eacd37f281581fe1.jpg?q=50" class="d-block w-100" alt="first-carosel">
+                <div class="carousel-caption d-none d-md-block">
+                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/aaae3b3e2cc499f1.jpg?q=50" class="d-block w-100" alt="second-carosel">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/bce1333cb44de608.jpg?q=50" class="d-block w-100" alt="third-carosel">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          </div>
+
+
+        </div>
+
+            <!--axis bank image -->
+
+                   <div class="row border border-1">
+            <div class="col-12">
+                <img class="axis_bank_image pt-3 " src="https://rukminim1.flixcart.com/fk-p-flap/2000/2000/image/31bc5f75424dd33c.jpg?q=50" width="100%" height="90%" alt="axis-bank-image">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--second carosel-->
+
+
+<div class="container-fluid">
+    <div class="row bg-white">
+        <div class="col-lg-3 p-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-between border border-2">
+          <img src="https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70" alt="">
+          <div class="product-detalis text-center justify-content-center">
+          <p class="product-name">Printers</p>
+          <p class="product-price">From 3999</p>
+         
+        </div>
+        </div>
+
+        <div class="col-lg-3 p-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-between border border-2">
+          <img src="https://rukminim1.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70" alt="">
+          <div class="product-detalis text-center">
+          <p class="product-name">Printers</p>
+          <p class="product-price">From 5999</p>
+         
+        </div>
+        </div>
+        <div class="col-lg-3 p-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-between border border-2">
+          <img src="https://rukminim1.flixcart.com/image/200/200/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70" alt="">
+          <div class="product-detalis text-center">
+          <p class="product-name">Printers</p>
+          <p class="product-price">From 8999</p>
+         
+        </div>
+        </div>
+        <div class="col-lg-3 p-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-between border border-2">
+          <img src="https://rukminim1.flixcart.com/image/200/200/kactpjk0/shaver/m/6/z/philips-s1121-45-s1121-45-original-imafry2qgxcwnm9r.jpeg?q=70" alt="">
+          <div class="product-detalis text-center">
+          <p class="product-name">Printers</p>
+          <p class="product-price">From 9999</p>
+       
+        </div>
+        </div>
+       
+    </div>
+</div>
+       
+
+        <!--second carosel ends here-->
+
+
+<div class=" third-sec-img-container container-fluid ">
+    <div class="row">
+        <div class="col border border-1">
+            <img class="img-fluid  pt-4" src="https://rukminim1.flixcart.com/fk-p-flap/480/480/image/cf10dac9408209aa.jpg?q=50"  alt="first image">
+        </div>
+        <div class="col ms-3 pt-4  border border-1">
+            <img class="img-fluid" src="https://rukminim1.flixcart.com/fk-p-flap/480/480/image/fa71b21709d10b64.jpg?q=50" alt="second image">
+        </div>
+        <div class="col ms-3 pt-4 border border-1">
+            <img class="img-fluid" src="https://rukminim1.flixcart.com/fk-p-flap/480/480/image/b2e2ab95b3d50147.jpg?q=50" alt="third image">
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="container-fluid login-modal">
+  <div class="row">
+    <div class="col">
+      <!--modal -->
+ 
+
+<!-- Modal -->
+<!-- <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--container-->
+        <!-- <div class="container-fluid">
+          <div class="row">
+          <div class="col border border-2 border-black">lskfj</div>
+          <div class="col border border-2 border-black">ierwj</div>
+        </div> -->
+          <!--container end-->
+        <!-- </div >
+      </div>
+      
+    </div>
+  </div>
+</div> --> 
+      <!--modal ends here-->
+      
+    <!-- </div>
+  </div>
+</div>  -->
+
+<div class="container-fluid border border-1  footer-article-container">
+  <div class="row">
+    <div class="col">
+      <h5>Top Stories:Brand Directory</h5>
+      <p class="footer-para"><span class="footer-span">MOST SEARCHED FOR ON FLIPKART:</span>Flipkart Axis Bank Super Elite Credit cardPrimebook LaptopsBounce
+         Infinity E1Buy Laptop on EMIInfinix Zero Book UltraOPPO Reno8 5GOPPO Reno8 Pro 5GFresh Flower BouquetElectric
+          CyclesBadmintonBouquetOneplus MonitorsSell Old Mobile PhonesPremium LaptopsElectronics StorePhone coverInfinix
+           INBook Y1 PlusOkaya Electric Vehiclesbgauss electric scooterOPPO Reno7 Pro 5GiPhone 13iPhone 13 ProiPhone 13 Pro
+            MaxiPhone 13 MiniGoogle Pixel 6a coversFlipkart QuickAmpere MagnusFlipkart Help CentreOnline Boat StoreCovers from
+             Rs 99Flipkart Track OrdersFlipkart Manage OrdersFlipkart Return OrdersFlipkart Gift Cards StoreFlipkart Axis Bank
+              Credit CardFlipkart Pay Later</p>
+    </div>
+    <div class="row ">
+      <div class="col">
+        
+        <p class="footer-para"><span class="footer-span">MOBILES:</span>iPhone 12 64GBiPhone 12 Pro 512GBiPhone 12 128GBVivo Y91iVivo Y11Vivo Y15Vivo Y50Vivo Y12Reno2 FOppo A12Oppo F15Oppo A31Samsung A71Samsung A51Samsung A31Realme X2iPhone 11iPhone 11 ProMobile CoverMobile Offersiphone x4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo Mobile</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        
+        <p class="footer-para"><span class="footer-span">CAMERA:</span>GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon DSLR</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        
+        <p class="footer-para"><span class="footer-span">LAPTOPS:</span>MacBook Pro M2Premium LaptopASUS ROG Strix SCAR 16 (2023) Core i9 13th GenASUS ROG Zephyrus M16 (2023) Core i9 13th GenASUS Zenbook 14 OLED (2022)Realme Book Prime Core i5 11th GenMicrosoft Surface Go Pentium 128GBBranded LaptopsApple LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1 LaptopsLaptopsDell latest laptops 2022HP latest laptops 2022Infinix INBook Y1 PlusSAMSUNG Galaxy Book312th Gen Intel Core Laptops
+          TVS:Nokia TVPanasonic TVThomson TVMi X ProRealme TVMotorola TVOnePlus TVsLG TVTVSony TVSamsung TVAndroid TelevisionIffalcon TvMi TV</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4></h4>
+        <p class="footer-para"><span class="footer-span"></span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="footer-para"><span class="footer-span">LARGE APPLIANCES:</span>TV & Appliances End of Season SaleTelevisionWashing MachinesRefrigeratorsAir ConditionersElectric CookersElectric Jug(Heater) / Travel KettlesInduction CooktopsInverters / stabilizerIrons / Iron BoxMixer Grinder JuicerWet GrindersChimneysMicrowave OvensVacuum CleanersWater PurifierFanMarQ Customer Care</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="footer-para"><span class="footer-span">CLOTHING:</span>Men ShirtsKurta PajamaKurtasMen T-ShirtsJeansSareeDressesKids DressesDesigner Salwar SuitsBraDesigner KurtisTrack PantMen KurtasGym WearParty DressesPalazzo SuitsBoys ClothingGlovesNightyMaxi DressesAnarkaliGownsCulottesSalwar SuitsKurtisDesigner SareesLeggingsShortsGeorgette SareesEthnic WearBriefs & TrunksNike WatchesAscot TieCorset Tops TunicsLeather PU SkirtsCorset tops camisolesWomen magenta earringsNo collar jacketsGreen dress materialBlack patiala kurta setMen camel shoes casualBlack pathaniTassel SareesKhaki dressesKids formal dressesMauve shirtsWomen henleyuppada pattu sareesLeopard dressesSleeveless shrugs</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="footer-para"><span class="footer-span">FOOTWEAR:</span>ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata ShoesWoodland ShoesSkechers ShoesSneakersWomens BootsSports ShoesLoafersSandalsLotto Sports ShoesCasual ShoesWomens Skechers ShoesAsics Sports ShoesFormal ShoesSchool Shoes</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="footer-para"><span class="footer-span">GROCERIES:</span>PhonePe Grocery VoucherHand WashSoapCashew NutsSunflower OilEggsToilet CleanerHarpic Toilet CleanerDettol SoapMustard OilBiscuitsCheesePatanjali AttaFortune OilAashirvaad AttaTea</p>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <p class="footer-para"><span class="footer-span">BEST SELLING ON FLIPKART:</span>Fire-Boltt Ninja Calling Pro Bluetooth Calling Smartwatch 1.69 inch HD Display SmartwatchBest Gas GeyserKitchen GeyserNutri BlendersPortable Air CoolerBest Air CoolerBagsHitachi Refrigerator 3 DoorBooksToysCandlesHelmetsWall ClocksBaby FoodChocolatesCyclesCalculatorsLipsticksMaskVertiv UPSFastrack WatchesWalletsEarringsGold CoinsRealme Pad MiniHandbagsconekt SW2 SmartwatchMivi DuoPods a350Speaker Cleaner</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="footer-para"><span class="footer-span">FURNITURE:</span>
+          FurnitureSofasBedsDining setsWardrobesMattressesTV UnitsTablesChairsShelvesBean BagsOffice ChairsComputer TableOffice TablesRed SofaWakefit BedsWhite SofaWakefit MattressGreen SofaBlack SofaBrown Sofa</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="footer-para"><span class="footer-span">BGMH:</span>Whey ProteinHomeopathyCricketCyclesFootballsTreadmillsChristmas GiftsFitness AccessoriesOnline GuitarBooks StoreMusical Instrument StoreDabur ChyawanprashBaidyanath ChyawanprashEnergy DrinksToysMilk Drink MixesRakhiChyawanprashIndian FlagProtein Supplements</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="container-fluid">
+
+    <div class="col">
+    <div class="row  border border-2">
+
+      <!--  ''''''''''''''''''''''''''''''''''''''''''''table'''''''''''''''''''''''''''''''''''''''''''  -->
+     <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #172337"
+          >
+    <!-- Grid container -->
+    <div class="container-fluid border border-5 border-danger p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Mail Us:
+            </h6>
+            <p>
+              Flipkart Internet Private Limited,
+
+Buildings Alyssa, Begonia &
+
+Clove Embassy Tech Village,
+
+Outer Ring Road, Devarabeesanahalli Village,
+
+Bengaluru, 560103,
+
+Karnataka, India
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">About</h6>
+            <p>
+              <a class="text-white">Contact Us</a>
+            </p>
+            <p>
+              <a class="text-white">About Us</a>
+            </p>
+            <p>
+              <a class="text-white">Careers</a>
+            </p>
+            <p>
+              <a class="text-white">Flipkart Stories</a>
+            </p>
+            <p>
+              <a class="text-white">Press</a>
+            </p>
+            <p>
+              <a class="text-white">Flipkart Wholesale</a>
+            </p>
+            <p>
+              <a class="text-white">Corporate Information</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Help
+            </h6>
+            <p>
+              <a class="text-white">Payments</a>
+            </p>
+            <p>
+              <a class="text-white">Shipping</a>
+            </p>
+            <p>
+              <a class="text-white">Cancellation & Returns</a>
+            </p>
+            <p>
+              <a class="text-white">FAQ</a>
+            </p>
+            <p>
+              <a class="text-white">Report Infringement</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Social</h6>
+            <p><i class="fas fa-home mr-3"></i>Facebook</p>
+            <p><i class="fas fa-envelope mr-3"></i>Twitter</p>
+            <p><i class="fas fa-phone mr-3"></i>Youtube</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+     
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+    </div>
+
+  </div>
+  </div>
+</footer>
+
+
+   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<link  rel="stylesheet" href="index.js">
+<script>
+ 
+  let button=document.getElementsByClassName("Login-button");
+  
+  
+  
+     function displayModal(){
+      let loginElement=document.getElementById("login-modal");
+      let body=document.getElementById("body");
+      let allElements=document.getElementsByTagName("*");
+      console.log(body);
+      body.style.overflow="hidden";
+
+      /* loop through each object */
+      // console.log('all elements')
+      // for(const element of allElements){
+      //   if(element!=loginElement){
+      //     element.style.filter="blur(3px)"
+      //   }else{
+      //     console.log(element);
+      //   }
+     // }
+      
+      
+      loginElement.style.display="block";
+      
+  
+     }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
